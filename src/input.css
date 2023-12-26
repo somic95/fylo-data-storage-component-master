@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background: #0c122c url(./images/bg-desktop.png) no-repeat;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background: #0c122c url(./images/bg-mobile.png) no-repeat;
+    }
+}
+
+span, ul, p {
+    color: #dddbff;
+    opacity: 1;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #ffffff;
+    border-bottom: 20px solid transparent;
+  }
+

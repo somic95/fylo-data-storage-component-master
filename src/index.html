@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+<body class="md:bg-bottom flex items-center justify-center h-screen">
+
+    <main class="md:w-3/5 w-full md:px-0 px-7 mx-auto gap-8 md:flex md:items-end ">
+      <!-- section left:desktop , top:mobile -->
+        <section class="bg-[#1d2c67] p-10 mb-4 md:mb-0 md:w-2/5 h-auto rounded-tl-lg rounded-tr-[100px] rounded-b-lg">
+          <article>
+            <div class="logo">
+              <img src="./images/logo.svg" alt="">
+            </div>
+
+            <ul class="flex items-center gap-4 mt-10">
+              <li class="bg-[#0c122c] w-12 h-12 flex items-center justify-center rounded-lg"><img src="./images/icon-document.svg" alt=""></li>
+              <li class="bg-[#0c122c] w-12 h-12 flex items-center justify-center rounded-lg"><img src="./images/icon-folder.svg" alt=""></li>
+              <li class="bg-[#0c122c] w-12 h-12 flex items-center justify-center rounded-lg"><img src="./images/icon-upload.svg" alt=""></li>
+            </ul>
+          </article>
+        </section>
+        <!-- end left:desktop , top:mobile section -->
+  
+        <!-- section right:desktop , bottom:mobile -->
+        <section class="relative bg-[#1d2c67] md:w-3/5 h-auto p-10 rounded-lg">
+          <article>
+              <p class="text-xs pb-3">You’ve used <span class="font-bold">815 GB</span> of your storage</p>
+              
+              <div class="pb-3 ">
+                <div class="relative rounded-full w-full h-5 bg-[#0c122c]">
+                    <div class="absolute top-1 left-1 rounded-full w-4/5 h-3 bg-gradient-to-r from-[#ffa399] to-[#ff4d97]"></div>
+                    <div class="absolute top-[5px] right-[46px] md:right-[82px] rounded-full w-2.5 h-2.5 bg-white"></div>
+                </div>
+              </div>
+
+              <ul class="font-bold text-xs flex justify-between">
+                <li>0 GB</li>
+                <li>1000 GB</li>
+              </ul>
+
+              <div class="absolute w-[170px] md:-top-12 md:right-8 md:mt-0 md:ml-0 mt-4 ml-8 uppercase bg-white flex items-center justify-center font-bold rounded-xl">
+                <h1 class="text-4xl text-[#0c122c] py-4">185</h1>
+                <p class="text-[#848794] text-xs pl-2">gb left</p>
+              </div>
+
+              <div class="triangle-left absolute top-0 right-8 hidden md:block"></div>
+          </article>
+        </section>
+        <!-- end right:desktop , bottom:mobile section -->
+    </main>
+
+</body>
+</html>
